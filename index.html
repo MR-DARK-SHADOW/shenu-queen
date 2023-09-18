@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: black;
+      color: white; /* Set text color to white for better visibility on a black background */
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <button style="--clr:#39FF14" onclick="toggleVideo()"><span>Scan Qr 1</span><i></i></button>
+
+  <button style="--clr:#FF44CC" onclick="toggleVideo()"><span>Scan Qr 2</span><i></i></button>
+
+  <button style="--clr:#0FF0FC" onclick="toggleVideo()"><span>Heroku Deploy</span><i></i></button>
+
+  <button style="--clr:#8A2BE2" onclick="toggleVideo()"><span>Railway Deploy</span><i></i></button>
+
+  <script>
+    var video = document.getElementById("myVideo");
+    var isPlaying = true;
+
+    function toggleVideo() {
+      if (isPlaying) {
+        video.pause();
+        isPlaying = false;
+      } else {
+        video.play();
+        isPlaying = true;
+      }
+    }
+  </script>
+
+</body>
+
+</html>
